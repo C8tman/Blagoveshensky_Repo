@@ -1,0 +1,327 @@
+* {
+   margin: 0;
+}
+body {
+   background-color: #fff;
+}
+.header {
+   padding: 8px 16px;
+   background-color: rgba(255, 255, 255, 0.288);
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+}
+
+.links {
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   list-style: none;
+   li {
+      padding: 4px 12px;
+      background-color: none;
+      border-radius: 10px;
+      a {
+         color: #000000;
+         text-decoration: none;
+      }
+   }
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: none;
+   width: max-content;
+   border-radius: 10px;
+
+   img {
+      width: 50px;
+      height: 50px;
+   }
+}
+
+.user_acc {
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   align-items: center;
+   gap: 5px;
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100vh;
+
+   background-image: url(/project/assets/images/forest.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.main-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+
+   h1 {
+      font-size: 68px;
+      text-align: center;
+      color: #fff;
+   }
+
+   p {
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #fff;
+      text-align: center;
+   }
+}
+
+.social-links {
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: end;
+   gap: 10px;
+}
+
+.catalog {
+   padding: 40px 60px;
+   background-image: url(/project/assets/images/bg_train.jpg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: cover;
+}
+
+.catalog-text {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   h1 {
+      font-size: 60px;
+      color: green;
+   }
+
+   p {
+      font-size: 16px;
+      width: 400px;
+      color: green;
+   }
+}
+
+.your-class {
+   margin: 20px 40px;
+   /*width: 220px !important;*/
+   height: 220px;
+
+   img {
+      width: 20vh;
+      height: 25vh;
+      object-fit: cover;
+      border-radius: 50px;
+   }
+}
+.aboutUs-text {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 40px 60px;
+   h1 {
+      font-size: 60px;
+      color: green;
+   }
+}
+
+.about-bg {
+   background-image: url(/project/assets/images/bg_forest.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.about {
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   width: 100%;
+   margin: 0 auto;
+   h1 {
+      font-size: 68px;
+      color: #31d18399;
+   }
+}
+
+.about-content {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 60px;
+}
+
+.about-text {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   background-color: #ffffff;
+   height: max-content;
+   width: 400px;
+   padding: 40px;
+   h1 {
+      font-size: 18px;
+      color: #31d18399;
+   }
+   ul {
+      li::marker {
+         color: green;
+      }
+   }
+}
+.images {
+   display: grid;
+
+   grid-template-areas:
+      "a_img1 a_img3"
+      "a_img2 a_img3";
+
+   grid-template-columns: max-content;
+   grid-gap: 10px;
+   position:relative;
+   right: 600px;
+   justify-content: center;
+   img{
+      border-radius: 10px;
+   }
+}
+.a_img1 {
+   grid-area: a_img1;
+   img {
+      width: 200px;
+      height: 200px;
+   }
+}
+
+.a_img2 {
+   grid-area: a_img2;
+   img {
+      width: 200px;
+      height: 200px;
+   }
+}
+
+.a_img3 {
+   grid-area: a_img3;
+   img {
+      width: 200px;
+      height: 415px;
+   }
+}
+
+.end-line {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.end-line {
+   img {
+      height: 71px;
+      width: 125px;
+   }
+}
+
+.gallery-text {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 40px 60px;
+   h1 {
+      font-size: 60px;
+      color: green;
+   }
+}
+
+.gallery_images {
+   display: grid;
+   grid-template-columns: max-content;
+   grid-template-areas:
+      "img1 img1 img2 img5"
+      "img3 img4 img4 img5";
+   grid-gap: 10px;
+   justify-content: center;
+
+   div {
+      img {
+         border-radius: 20px;
+      }
+   }
+}
+.img1 {
+   grid-area: img1;
+   img {
+      width: 400px;
+      height: 200px;
+   }
+}
+.img2 {
+   grid-area: img2;
+   img {
+      width: 200px;
+      height: 200px;
+   }
+}
+.img3 {
+   grid-area: img3;
+   img {
+      width: 200px;
+      height: 200px;
+   }
+}
+.img4 {
+   grid-area: img4;
+   img {
+      width: 400px;
+      height: 200px;
+   }
+}
+.img5 {
+   grid-area: img5;
+   img {
+      width: 200px;
+      height: 414px;
+   }
+}
+
+.contacts-text {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 40px 60px;
+
+   h1 {
+      font-size: 60px;
+      color: green;
+   }
+}
+
+.geomap {
+   border-radius: 20px;
+   width: 400px;
+   height: 400px;
+   position: absolute;
+   left: 60px;
+}
+
+.square {
+   border: 5px solid rgba(0, 0, 0, 0.3);
+   background-color: rgba(0, 0, 0, 0.2);
+   border-radius: 20px;
+   width: 400px;
+   height: 400px;
+   position: absolute;
+   left: 900px;
+}

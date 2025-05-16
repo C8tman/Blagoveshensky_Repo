@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+}
+
+.header{
+    padding: 8px 16px;
+    background-color: #fcb55883;
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+    background-image: url(/test/assets/images/78cf3eee0658dbf205e821f5a31db5e3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 93, 160);
+    width: max-content;
+    border-radius: 10px;
+
+    img{
+    width: 50px;
+    height: 50px;
+    }
+
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    li{
+        padding: 4px 12px;
+        background-color: bisque;
+        border-radius: 10px;
+        a{
+            color: #000000;
+            text-decoration: none
+        }
+    }
+}
+
+.social-container{
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.social-toggle{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.main-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.main-icon:hover{
+    transform: scale(1.1);
+}
+
+.main-icon::before{
+    content: "+";
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.social-toggle:checked + .main-icon::before{
+    content: "x";
+    font-size: 24px;
+}
+
+.social-icons{
+    position: absolute;
+    bottom:  60px;
+    left: 40px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.social-toggle:checked ~ .social-icons{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+
+.social-icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover{
+    transform: scale(1.2);
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    h1{
+        font-size: 68px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 18px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 24px;
+    }
+}
