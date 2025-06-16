@@ -124,9 +124,21 @@ body {
       width: 20vh;
       height: 25vh;
       object-fit: cover;
-      border-radius: 50px;
+      border-radius: 20px;
    }
 }
+
+.your-class-text{
+   figcaption{
+      color: #fff;
+      position: relative;
+      bottom: 25px;
+      left: 20px;
+      font-size: 16px;
+      
+   }
+}
+
 .aboutUs-text {
    display: flex;
    align-items: center;
@@ -211,6 +223,7 @@ body {
    img {
       width: 200px;
       height: 200px;
+      border-bottom-left-radius: 80px;
    }
 }
 
@@ -219,6 +232,7 @@ body {
    img {
       width: 200px;
       height: 415px;
+      border-top-right-radius: 80px;
    }
 }
 
