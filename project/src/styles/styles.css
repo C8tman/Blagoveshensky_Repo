@@ -1,9 +1,11 @@
 * {
    margin: 0;
 }
+
 body {
    background-color: #fff;
 }
+
 .header {
    padding: 8px 16px;
    background-color: rgba(255, 255, 255, 0.288);
@@ -17,10 +19,12 @@ body {
    flex-direction: row;
    gap: 20px;
    list-style: none;
+
    li {
       padding: 4px 12px;
       background-color: none;
       border-radius: 10px;
+
       a {
          color: #000000;
          text-decoration: none;
@@ -34,11 +38,10 @@ body {
    align-items: center;
    background-color: none;
    width: max-content;
-   border-radius: 10px;
 
    img {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
    }
 }
 
@@ -54,14 +57,13 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   height: 100vh;
 
    background-image: url(/project/assets/images/forest.jpg);
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
    background-position: center;
-   height: 950px;;
+   height: 950px;
 }
 
 .main-text {
@@ -94,13 +96,32 @@ body {
 
 .catalog {
    padding: 40px 60px;
-   /*
    background-image: url(/project/assets/images/bg_train.jpg);
    background-repeat: no-repeat;
    background-position: 50% 50%;
    background-size: cover;
    height: 950px;
-   */
+   position: relative;
+}
+
+.catalog::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   /* Поверх изображения */
+   background-color: rgba(255, 255, 255, 0.5);
+   /* Черная полупрозрачная заливка */
+}
+
+.catalog-content {
+   position: relative;
+   /* Чтобы контент оказался поверх подложки */
+   z-index: 2;
+   /* Контент должен находиться выше подложки */
 }
 
 .catalog-text {
@@ -109,12 +130,12 @@ body {
    gap: 10px;
 
    h1 {
-      font-size: 60px;
+      font-size: 80px;
       color: green;
    }
 
    p {
-      font-size: 16px;
+      font-size: 18px;
       width: 400px;
       color: green;
    }
@@ -124,23 +145,23 @@ body {
    margin: 20px 40px;
    /*width: 220px !important;*/
    height: 220px;
-
+   top: 200px;
    img {
-      width: 20vh;
-      height: 25vh;
+      width: 350px;
+      height: 500px;
       object-fit: cover;
       border-radius: 20px;
    }
 }
 
-.your-class-text{
-   figcaption{
+.your-class-text {
+   figcaption {
       color: #fff;
       position: relative;
       bottom: 25px;
       left: 20px;
       font-size: 16px;
-      
+
    }
 }
 
@@ -149,6 +170,7 @@ body {
    align-items: center;
    gap: 10px;
    padding: 40px 60px;
+
    h1 {
       font-size: 60px;
       color: green;
@@ -162,7 +184,28 @@ body {
    background-position: center;
    background-attachment: fixed;
    height: 950px;
+   position: relative;
+
 }
+
+.about-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;               /* Поверх изображения */
+    background-color: rgba(255, 255, 255, 0.5); /* Черная полупрозрачная заливка */
+}
+
+.about-content{
+   position: relative;
+   /* Чтобы контент оказался поверх подложки */
+   z-index: 2;
+   /* Контент должен находиться выше подложки */
+}
+
 .about {
    padding: 40px;
    display: flex;
@@ -170,13 +213,14 @@ body {
    gap: 40px;
    width: 100%;
    margin: 0 auto;
+
    h1 {
       font-size: 68px;
       color: #31d18399;
    }
 }
 
-.about-content {
+.about-contentbox {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -191,16 +235,19 @@ body {
    height: max-content;
    width: 400px;
    padding: 40px;
+
    h1 {
       font-size: 18px;
       color: #31d18399;
    }
+
    ul {
       li::marker {
          color: green;
       }
    }
 }
+
 .images {
    display: grid;
 
@@ -210,15 +257,18 @@ body {
 
    grid-template-columns: max-content;
    grid-gap: 10px;
-   position:relative;
+   position: relative;
    right: 600px;
    justify-content: center;
-   img{
+
+   img {
       border-radius: 10px;
    }
 }
+
 .a_img1 {
    grid-area: a_img1;
+
    img {
       width: 200px;
       height: 200px;
@@ -227,6 +277,7 @@ body {
 
 .a_img2 {
    grid-area: a_img2;
+
    img {
       width: 200px;
       height: 200px;
@@ -236,6 +287,7 @@ body {
 
 .a_img3 {
    grid-area: a_img3;
+
    img {
       width: 200px;
       height: 415px;
@@ -248,6 +300,7 @@ body {
    align-items: center;
    justify-content: space-between;
 }
+
 .end-line {
    img {
       height: 71px;
@@ -255,7 +308,7 @@ body {
    }
 }
 
-.gallery{
+.gallery {
    background: #fff;
    background-attachment: fixed;
    height: 950px;
@@ -266,6 +319,7 @@ body {
    align-items: center;
    gap: 10px;
    padding: 40px 60px;
+
    h1 {
       font-size: 60px;
       color: green;
@@ -287,43 +341,53 @@ body {
       }
    }
 }
+
 .img1 {
    grid-area: img1;
+
    img {
       width: 400px;
       height: 200px;
    }
 }
+
 .img2 {
    grid-area: img2;
+
    img {
       width: 200px;
       height: 200px;
    }
 }
+
 .img3 {
    grid-area: img3;
+
    img {
       width: 200px;
       height: 200px;
    }
 }
+
 .img4 {
    grid-area: img4;
+
    img {
       width: 400px;
       height: 200px;
    }
 }
+
 .img5 {
    grid-area: img5;
+
    img {
       width: 200px;
       height: 414px;
    }
 }
 
-.contacts{
+.contacts {
    background: #fff;
    background-attachment: fixed;
    height: 950px;
@@ -345,7 +409,7 @@ body {
    border-radius: 20px;
    width: 400px;
    height: 400px;
-   position: absolute;
+   position: relative;
    left: 60px;
 }
 
@@ -355,6 +419,16 @@ body {
    border-radius: 20px;
    width: 400px;
    height: 400px;
-   position: absolute;
+   position: relative;
    left: 900px;
+   bottom: 405px;
+}
+
+.footer {
+   padding: 8px 16px;
+   background-color: rgba(241, 211, 113, 0.288);
+   justify-content: space-around;
+   display: flex;
+   align-items: center;
+   height: 120px;
 }
