@@ -14,7 +14,7 @@
 </head>
 
 <body>
-   <section class="main">
+   <section class="main" id="main">
       <header class="header">
          <div class="logo">
             <img src="/project/assets/svg/Logo 1.svg" alt="Логотип" />
@@ -22,12 +22,11 @@
 
          <div>
             <ul class="links">
-               <li><a href="">Главная</a></li>
-               <li><a href="">О нас</a></li>
-               <li><a href="">Галерея</a></li>
-               <li><a href="">Дополнительное</a></li>
-               <li><a href="">Каталог</a></li>
-               <li><a href="">Контакты</a></li>
+               <li><a href="#main">Главная</a></li>
+               <li><a href="#catalog">Каталог</a></li>
+               <li><a href="#about">О нас</a></li>
+               <li><a href="#gallery">Галерея</a></li>
+               <li><a href="#contacts">Контакты</a></li>
             </ul>
          </div>
 
@@ -54,7 +53,7 @@
       </div>
    </section>
 
-   <section class="catalog">
+   <section class="catalog" id="catalog">
       <div class="catalog-content">
          <div class="catalog-text">
             <h1>КАТАЛОГ</h1>
@@ -69,37 +68,47 @@
             <figure class="your-class-text">
                <img src="../assets/images/mountain_park.jpg" alt="" />
                <figcaption>Горный парк “Рускеала”</figcaption>
+               <p>Увидеть живописные виды горного парка <br>"Рускеала"</p>
+               <p><a href="https://www.google.com/search?q=%D0%A0%D1%83%D1%81%D0%BA%D0%B5%D0%B0%D0%BB%D0%B0+%D0%B2%D0%B8%D0%B4%D1%8B&sca_esv=f189ccc98951b8a3&udm=2&biw=1872&bih=962&sxsrf=AE3TifME6Icms8e-v0AwFem7vAx0-FPXaQ%3A1750408493000&ei=LB1VaJjmPLK9wPAPkp7P8A8&ved=0ahUKEwiYrL_jy_-NAxWyHhAIHRLPE_4Q4dUDCBE&uact=5&oq=%D0%A0%D1%83%D1%81%D0%BA%D0%B5%D0%B0%D0%BB%D0%B0+%D0%B2%D0%B8%D0%B4%D1%8B&gs_lp=EgNpbWciGdCg0YPRgdC60LXQsNC70LAg0LLQuNC00YsyBhAAGAUYHkiFLVDtGVjNK3ACeACQAQCYAVmgAaMFqgEBOLgBA8gBAPgBAZgCCKACtgXCAgYQABgHGB7CAggQABgFGAcYHpgDAIgGAZIHATigB5IbsgcBOLgHtgXCBwUwLjUuM8gHEA&sclient=img#vhid=hPU8Jev5weGTyM&vssid=mosaic" style="color: #196942c0;">Узнать больше</a></p>
             </figure>
 
             <figure class="your-class-text">
                <img src="../assets/images/island.jpg" alt="" />
                <figcaption>Остров “Кижи”</figcaption>
+               <p>Увидеть живописные виды острова <br>"Кижи"</p>
+               <p><a href="https://www.google.com/search?q=%D0%9A%D0%B8%D0%B6%D0%B8+%D0%B2%D0%B8%D0%B4%D1%8B&sca_esv=f189ccc98951b8a3&udm=2&biw=1872&bih=962&sxsrf=AE3TifOcwVusJVnZMM1LxQUSiHmmeMn_vw%3A1750405837547&ei=zRJVaKKbIdemwPAPtdzngQ4&ved=0ahUKEwjitaPxwf-NAxVXExAIHTXuOeAQ4dUDCBE&uact=5&oq=%D0%9A%D0%B8%D0%B6%D0%B8+%D0%B2%D0%B8%D0%B4%D1%8B&gs_lp=EgNpbWciEdCa0LjQttC4INCy0LjQtNGLSOzxoQFQ_OShAViE8KEBcAJ4AJABAJgBWqAB1AKqAQE0uAEDyAEA-AEBmAIDoAKOAsICBhAAGAcYHsICCBAAGAcYCBgemAMAiAYBkgcBM6AH8g2yBwEzuAeOAsIHBTAuMS4yyAcI&sclient=img#vhid=0q6zGhJdfkgMoM&vssid=mosaic" style="color: #196942c0;">Узнать больше</a></p>
             </figure>
 
             <figure class="your-class-text">
                <img src="../assets/images/kivach.jpg" alt="" />
                <figcaption>Водопад “Кивач”</figcaption>
+               <p>Увидеть живописные виды водопада <br>"Кивач"</p>
+               <p><a href="https://www.google.com/search?sca_esv=f189ccc98951b8a3&sxsrf=AE3TifPp8nrRR4qhR-m-ewnWTCuJAeoOJg:1750405826668&q=%D0%BA%D0%B8%D0%B2%D0%B0%D1%87+%D0%B2%D0%B8%D0%B4%D1%8B&udm=2&fbs=AIIjpHyXXa-jR7m04g-bjvdj4k5-Vu3thElMpfRBVcMe0k2JrE5odrMqNgCgijMYA8L8BKbWbJQviAfTPZOrb6WUkWWjpHX18iBHnnNjLJtGiCZEGwSen4dH7AMHJS9TL_GgiiZubNmoFxjVQM6hqXAAg44VCT6AYfJvMyBmygw0dDEUeR8zJHrYpsbEHNnGAxCsvLgraw_w-Cg5YpOwSkX0XUTbX2ZS1gE2xhPq8DKPaZGrkrfK27Sr5WcMqFqBH971mEQTkABak8SsSe8Pu13XZVyHB2YTJw&sa=X&ved=2ahUKEwjTq4vswf-NAxVhFhAIHXqFF_gQtKgLegQIFRAB&biw=1872&bih=962&dpr=1#vhid=T23r0FpKNYzKeM&vssid=mosaic" style="color: #196942c0;">Узнать больше</a></p>
             </figure>
 
             <figure class="your-class-text">
                <img src="../assets/images/petrozavodsk.jpg" alt="" />
                <figcaption>Столица г.Петрозаводск</figcaption>
+               <p>Увидеть живописные виды Петрозаводска</p>
+               <p><a href="https://www.google.com/search?sca_esv=d49d498028d0eec8&sxsrf=AE3TifMJyE5FC0cO3nxleNv5VgxOWihCGQ:1750408397880&q=%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA+%D0%B2%D0%B8%D0%B4%D1%8B&udm=2&fbs=AIIjpHx8KeeL4pinWNBsyb2wNnV5usfhHq8aE4_vhmkJsdUG1ZceTqaEzK4GvR7dRDaSf9SWTuRE9_9YJHMuZYpKy800aHCoVpNV4sxezZTPf044QMIldNbr2qTd6EtScHNxjPXCaInuHmJJZ7CUNQ2RSKF6X7v3K7bWmlr8ROICzpNUPWSWxM6vYy0kMFTbTb94qLEFKB000um7ncGv3Pe-m0aLRSi4sLH34kwKQMVqZ_w-Dz7RUMfHqPMbqZT_l8ck3k0Ggj6i2mXkPUifzwnvo1qmAv3wpw&sa=X&ved=2ahUKEwjU2ZG2y_-NAxVP2SoKHVRpGeAQtKgLegQIFxAB&biw=1872&bih=962&dpr=1#vhid=WNbEIx90v-Q9ZM&vssid=mosaic" style="color: #196942c0;">Узнать больше</a></p>
             </figure>
          </div>
       </div>
    </section>
 
-   <section class="about about-bg">
+   <section class="about about-bg" id="about">
       <div class="about-content">
          <h1>О НАС</h1>
-         <div class="about-contentbox">
+         <div class="about-content-row">
             <div class="about-text">
                <p>
                   Компания KarelTour основана в 2016 году. Мы начинали свою
-                  деятельность с небольшихтурестических походов, экспедициями
-                  и простоактивным отдыхом. За 6 лет существования компании
-                  мы:
+                  деятельность с небольших турестических походов,
+                  экспедициями и просто активным отдыхом.
                </p>
+               <br />
+               <p>За 6 лет существования компании мы:</p>
+               <br />
                <ul>
                   <li>Приняли более 457 000 гостей;</li>
                   <li>Расширили базу нашего снаряжения;</li>
@@ -132,7 +141,7 @@
       </div>
    </section>
 
-   <section class="gallery">
+   <section class="gallery" id="gallery">
       <div class="gallery-text">
          <h1>Галерея</h1>
       </div>
@@ -154,16 +163,28 @@
          </div>
       </div>
    </section>
-   <section class="contacts">
+   <section class="contacts" id="contacts">
       <div class="contacts-text">
          <h1>Контакты</h1>
       </div>
       <div>
          <div>
             <img class="geomap" src="/project/assets/images/map.jpg" alt="Объект на карте" />
+            <a
+               href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D0%B0,+30,+%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA,+%D0%A0%D0%B5%D1%81%D0%BF.+%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D0%B8%D1%8F,+185035/@61.794621,34.3661896,18z/data=!4m14!1m7!3m6!1s0x46a1ec6b02d15dbd:0x94b87becbd5b54e7!2z0YPQuy4g0JrQuNGA0L7QstCwLCAzMCwgMjcsINCf0LXRgtGA0L7Qt9Cw0LLQvtC00YHQuiwg0KDQtdGB0L8uINCa0LDRgNC10LvQuNGPLCAxODUwMzU!3b1!8m2!3d61.7942579!4d34.3668881!3m5!1s0x46a1ec6b195e6ce7:0x6d269e511e8407aa!8m2!3d61.7946877!4d34.3665295!16s%2Fg%2F11s86d9p09?entry=ttu&g_ep=EgoyMDI1MDYxNi4wIKXMDSoASAFQAw%3D%3D">
+               <img class="place-marker" src="/project/assets/svg/place-marker-svgrepo-com.svg" alt="" />
+            </a>
          </div>
          <div class="square">
-            <h1>Есть вопросы?</h1>
+            <h1>ОСТАЛИСЬ ВОПРОСЫ?</h1>
+            <h1 style="text-align: left; margin-left: 30px">АДРЕС:</h1>
+            <p>Ул.Кирова, д.30, офис 27</p>
+            <h1 style="text-align: left; margin-left: 30px">
+               КОНТАКТНЫЙ ТЕЛЕФОН:
+            </h1>
+            <p>+7 (954) 654-78-91</p>
+            <p>Круглосуточно, без выходных</p>
+            <h2>ВСЕГДА БУДЕМ РАДЫ<br />ОТВЕТИТЬ!</h2>
          </div>
       </div>
    </section>
@@ -175,12 +196,11 @@
 
          <div>
             <ul class="links">
-               <li><a href="">Главная</a></li>
-               <li><a href="">О нас</a></li>
-               <li><a href="">Галерея</a></li>
-               <li><a href="">Дополнительное</a></li>
-               <li><a href="">Каталог</a></li>
-               <li><a href="">Контакты</a></li>
+               <li><a href="#main">Главная</a></li>
+               <li><a href="#catalog">Каталог</a></li>
+               <li><a href="#about">О нас</a></li>
+               <li><a href="#gallery">Галерея</a></li>
+               <li><a href="#contacts">Контакты</a></li>
             </ul>
          </div>
          <div class="social-links">
